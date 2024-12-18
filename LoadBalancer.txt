@@ -1,0 +1,35 @@
+#!/bin/bash
+	yum install httpd -y
+	sudo systemctl enable httpd
+	sudo mkdir /var/www/html
+	sudo mkdir /var/www/html/orders
+	echo "<html><body bgcolor=cyan>"  > /var/www/html/index.html
+	echo "<h1><center> Flipkart Sales</h1>" >> /var/www/html/index.html
+	echo "<h1> Flipkart Sales </h1>" >> /var/www/html/index.html
+	echo "</body></html>"  >> /var/www/html/index.html  
+
+	echo "<html><body bgcolor=yellow>"  > /var/www/html/orders/index.html
+	echo "<h1><center> Flipkart Order Application </h1>" >> /var/www/html/orders/index.html
+	echo "<h1>Flipkart Order  Application </h1>" >> /var/www/html/orders/index.html
+	echo "</body></html>"  >> /var/www/html/orders/index.html
+	sudo systemctl start httpd
+
+
+
+#!/bin/bash
+	yum install httpd -y
+	sudo systemctl enable httpd
+	sudo mkdir /var/www/html
+	sudo mkdir /var/www/html/payments
+	echo "<html><body bgcolor=cyan>"  > /var/www/html/index.html
+	echo "<h1><center> Flipkart Sales APP 2</h1>" >> /var/www/html/index.html
+	echo "<h1>Flipkart Sales APP 2 </h1>" >> /var/www/html/index.html
+	echo "</body></html>"  >> /var/www/html/index.html  
+
+	echo "<html><body bgcolor=green>"  > /var/www/html/payments/index.html
+	echo "<h1><center> Flipkart Payments </h1>" >> /var/www/html/payments/index.html
+	echo "<h1>Flipkart Payment Application</h1>" >> /var/www/html/payments/index.html
+	echo "</body></html>"  >> /var/www/html/index.html
+	sudo systemctl start httpd
+
+
